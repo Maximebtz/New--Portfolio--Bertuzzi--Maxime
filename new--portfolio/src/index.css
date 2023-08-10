@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: rgb(26, 26, 64);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+.app {
+  transition: all 2s ease-in-out;
+}
+
+canvas {
+  transform: scale(0.5);
+  filter: drop-shadow(0 0 8rem rgb(90, 0, 159));
+}
+
+.spline-container {
+  position: absolute;
+  height: 1000px; 
+  width: 1000px;
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
